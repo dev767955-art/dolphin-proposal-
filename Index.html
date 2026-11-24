@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8dce8">
+  <title>Someone Special 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+  <main class="site-shell">
+    <section class="page active" id="home">
+      <p class="eyebrow">A LITTLE SURPRISE FOR YOU</p>
+      <h1 class="hero-title">SOMEONE<br><span>SPECIAL</span></h1>
+      <p class="lead">A tiny website, made with lots of care. 💗</p>
+      <button class="primary" data-go="welcome">CONTINUE TO THE WEBSITE</button>
+    </section>
+
+    <section class="page" id="welcome">
+      <p class="section-no">WELCOME</p>
+      <h2>1. THE WELCOME PAGE..!!</h2>
+      <div class="message-card">
+        <h3>Hello..!! SOMEONE SPECIAL..!! 💗</h3>
+        <p>Welcome to my website !!!</p>
+        <p>Well ye website sirf maine aapke liye hii banaya hai ! Jisme kuch Sections aur arena hai with my feelings jo ki word mein express karna hard tha !</p>
+        <p>Toh aaram se, har ek section aur arena ko enjoy karo kyuki maine ye sab sirf aapke liye hii bahut pyar se banaya hai !!!</p>
+        <p>So, can I begin ?</p>
+      </div>
+      <button class="primary" data-go="why">YES, OF COURSE 💗</button>
+      <div class="nav"><button class="secondary" data-go="home">BACK ←</button><button class="primary small" data-go="why">NEXT →</button></div>
+    </section>
+
+    <section class="page" id="why">
+      <p class="section-no">A LITTLE REASON</p>
+      <h2>2. WHY THIS SURPRISE?</h2>
+      <div class="message-card">
+        <p>Kabhi-kabhi kuch log hamari life mein aate hain aur dheere-dheere bahut special ban jaate hain.</p>
+        <p>Kuch feelings simple words mein kehna easy nahi hota. Hamari conversations, calls aur chhote-chhote cute moments mere liye precious hain.</p>
+        <p>Isiliye socha ki ek chhoti si website banaun, jisme apni feelings aur kuch yaadein aapke saath share kar sakun.</p>
+        <p>Bas, chahta tha ki aapko pata chale ki aap mere liye kitni special ho. 💗</p>
+      </div>
+      <button class="primary" data-go="shayari">OKAY, LET'S ENJOY</button>
+      <div class="nav"><button class="secondary" data-go="welcome">BACK ←</button><button class="primary small" data-go="shayari">NEXT →</button></div>
+    </section>
+
+    <section class="page" id="shayari">
+      <p class="section-no">A FEW WORDS</p>
+      <h2>3. THE SHAYARI SESSION</h2>
+      <button class="primary" id="openShayari">OPEN SURPRISE 🌷</button>
+      <div class="message-card hidden" id="shayariText">
+        <p class="poem">Kuch kehna hai tumse, par keh nahi paata,<br>Dil ki har baat lafzon mein likh nahi paata,<br>Bas itna samajh lena meri khamoshi se,<br>Tujhe khaas maanta hu, ye keh nahi paata!</p>
+        <hr>
+        <p class="poem">Na jaane kab tu itni khaas ho ban gyi,<br>Meri har khushi ki wajah ban gyi.<br>Kabhi socha nahi tha koi itna apna sa lagega,<br>Magar tu toh meri dil ki sabse khaas ban gyi!</p>
+      </div>
+      <div class="nav"><button class="secondary" data-go="why">BACK ←</button><button class="primary small" data-go="quiz">NEXT →</button></div>
+    </section>
+
+    <section class="page" id="quiz">
+      <p class="section-no">LET'S SEE WHAT YOU REMEMBER</p>
+      <h2>4. ARENA OF QUESTIONS</h2>
+      <p class="lead">Choose the answer you think is right!</p>
+      <div id="quizArea"></div>
+      <div class="nav"><button class="secondary" data-go="shayari">BACK ←</button><button class="primary small" data-go="compliments">NEXT →</button></div>
+    </section>
+
+    <section class="page" id="compliments">
+      <p class="section-no">A FEW COMPLIMENTS</p>
+      <h2>5. ARENA OF COMPLIMENTS</h2>
+      <p class="lead">Tap any emoji to reveal a little message. 💗</p>
+      <div class="compliment-grid">
+        <button class="emoji-button" data-compliment="✨">✨</button>
+        <button class="emoji-button" data-compliment="😉">😉</button>
+        <button class="emoji-button" data-compliment="🌷">🌷</button>
+        <button class="emoji-button" data-compliment="🫶">🫶</button>
+        <button class="emoji-button" data-compliment="🙃">🙃</button>
+        <button class="emoji-button" data-compliment="🌹">🌹</button>
+      </div>
+      <div class="message-card reveal-box" id="complimentText">Your little compliment will appear here. 💗</div>
+      <div class="nav"><button class="secondary" data-go="quiz">BACK ←</button><button class="primary small" data-go="letter">NEXT →</button></div>
+    </section>
+
+    <section class="page" id="letter">
+      <p class="section-no">SOMETHING FROM THE HEART</p>
+      <h2>6. THE LETTER FOR YOU</h2>
+      <p class="lead">A little letter, written just for you.</p>
+      <button class="envelope" id="openLetter" aria-label="Open the letter">💌<span>OPEN LETTER</span></button>
+      <article class="letter-paper hidden" id="letterPaper">
+        <h3>Dear Someone Special, 💗</h3>
+        <p>To,<br>The Someone Special,<br>From the Instagram chats<br>Date :- Bhul gya 😅<br>Through the website...!!</p>
+        <p>Dear Someone Special,</p>
+        <p>I beg to say that ki aap itni cute kaise ho yaar ? Aap Harpic ka use karti ho kya ? 😅 ! Arey gussa mat hona mazak kar rha tha !</p>
+        <p>I want to really say that ki aap meri favorite notification ho, aap meri someone special ho aapki smile, aapki cuteness, aapki habits, aur aapki behaviors sab kuch mere liye bahut special hai ! Aapse baat karna hii mera ek important habit ban gya hai aapke sath kiya hua message, calls, snaps aur bhi bahut kuch sab kuch interesting hai mere liye aur kabhi mera bura maanga bhi ya aapka ruthna bhi bahut alag vibe add karta hai iss mistakes ko aur misunderstandings ko bhul kar hii ham dono ki bonding special hai so, maaf karte rha karo !</p>
+        <p>Yaar please aap jaisi bhi ho bass change mat hona because I really love you. I don't know why ? But i realised ki mere dil mein aapke liye something-Something hai aur aap mere liye Everything ho ! Aur aapke liye mere andar friendship se thodi zayda feelings hai !</p>
+        <p>So, here's my little confession :-</p>
+        <p><strong>I like you and I love you ! 🥺!!!👉👈</strong></p>
+        <p>No pressure, bass request hai aapse please maan jao na yaar ! Mai aapko force nahi kar rha hu bass aapse request kar rha hu ! Mujhe aapke past ke baare mein pata hai so, I understand your feelings so, isiliye mai koi pressure nahi create karna chahta hu aap comfortably apna decision le sakti ho !</p>
+        <p>Bass ek request hai... apna cute smile kabhi mat khona, apna random videos aur cute photos share karne wala behavior continue rakhna please</p>
+        <p>Your's,<br>The person who smiles at your notifications..!<br><strong>Alien..!!</strong></p>
+      </article>
+      <div class="nav"><button class="secondary" data-go="compliments">BACK ←</button><button class="primary small" data-go="reveal">NEXT →</button></div>
+    </section>
+
+    <section class="page" id="reveal">
+      <p class="section-no">7. THE FINAL REVEAL..!!</p>
+      <div class="simple-heart" aria-hidden="true">♡</div>
+      <h2>Can I Ask You Something?</h2>
+      <button class="primary" data-go="proposal">YES, OF COURSE 💗</button>
+      <div class="nav"><button class="secondary" data-go="letter">BACK ←</button><button class="primary small" data-go="proposal">NEXT →</button></div>
+    </section>
+
+    <section class="page" id="proposal">
+      <p class="section-no">8. THE PROPOSAL</p>
+      <div class="proposal-art" aria-hidden="true">🥺 👉🏻👈🏻 🌹<br>🫶</div>
+      <div class="proposal-copy">
+        <p>Dolphin, aapko shayad pata hai ki main aapko like karta hoon. Ye feelings kaafi time se hain, aur hamari friendship mere liye bahut special hai.</p>
+        <p>Main aapse honestly apni feelings share karna chahta hoon. No pressure, no expectations. Aapka decision mere liye important hai.</p>
+      </div>
+      <h2 class="question">Kya tum meri Best Friend se kuch zyada banna chaahogi?</h2>
+      <h2 class="question english">Will you be my girlfriend?</h2>
+      <p class="lead">Aapko jaldi mein jawab dene ki zaroorat nahi hai. Aapka honest answer jo bhi ho, main uski respect karunga.</p>
+      <div class="answer-buttons">
+        <button class="primary answer" data-answer="yes">YES, I LIKE YOU TOO 💗</button>
+        <button class="secondary answer" data-answer="time">I NEED SOME TIME 🌷</button>
+        <button class="secondary answer" data-answer="friend">I SEE YOU AS A FRIEND</button>
+      </div>
+      <div class="message-card answer-message hidden" id="answerMessage" aria-live="polite"></div>
+      <div class="nav"><button class="secondary" data-go="reveal">BACK ←</button><button class="primary small" data-go="home">HOME ↻</button></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
